@@ -15,6 +15,11 @@ public class CsvRow {
     @CellName(id = "user_country")
     private String country;
 
+    public CsvRow() {
+
+    }
+
+
     public CsvRow(long id, String name, String country) {
         this.id = id;
         this.name = name;
@@ -43,5 +48,14 @@ public class CsvRow {
 
     public void setCountry(String country) {
         this.country = country;
+    }
+
+    @Override
+    public String toString() {
+        return "CsvRow{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", country='" + country + '\'' +
+                '}';
     }
 }

@@ -54,6 +54,7 @@ public class Application {
         field.newInstance();
         Singleton.getSingleton();
         Singleton.getSingleton();
+        Singleton.getSingleton();
 
         //Singleton single = new
 
