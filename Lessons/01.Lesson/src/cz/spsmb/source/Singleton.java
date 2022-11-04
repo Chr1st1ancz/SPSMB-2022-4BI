@@ -6,6 +6,9 @@ public class Singleton {
     private static Singleton singleton;
 
     public static Singleton getSingleton() {
+        if (singleton == null){
+            singleton = new Singleton();
+        }
         return singleton;
     }
 
@@ -14,7 +17,11 @@ public class Singleton {
     }
 
     private Singleton() {
+        if (singleton != null){
+            throw new RuntimeException("Bruh");
+        }
         Singleton.instanceCount++;
+        System.out.println(instanceCount);
     }
 
     public String getMessage() {
