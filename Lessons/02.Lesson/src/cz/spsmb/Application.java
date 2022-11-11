@@ -22,7 +22,7 @@ public class Application {
 
     public static List<CsvRow> loadCsv() {
         List<CsvRow> records = new ArrayList<>();
-        try (BufferedReader br = new BufferedReader(new FileReader("C:\\Users\\christian.abraham\\IdeaProjects\\SPSMB-2022-4BI\\Lessons\\02.Lesson\\student.csv"))) {
+        try (BufferedReader br = new BufferedReader(new FileReader("C:\\Users\\christian.abraham\\Desktop\\student.csv"))) {
             String line;
             br.readLine();
             while ((line = br.readLine()) != null) {
